@@ -1,0 +1,22 @@
+.linkLeftMenu {
+  display: block;
+  text-align: left;
+  padding: 4px;
+  padding-left: 12px;
+  margin-left: 10px;
+  border-radius: 6px;
+}
+.linkLeftMenu:hover {
+  background-color: rgb(223, 223, 223);
+}
+.menuLeft h4 {
+  text-align: left;
+  padding: 6px;
+  padding-left: 12px;
+  background-color: white;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+.menuLeft section {
+  margin-bottom: 20px;
+}

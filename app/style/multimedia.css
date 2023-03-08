@@ -1,0 +1,22 @@
+.mainMulti {
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  grid-gap: 12px;
+}
+.scriptsContainer {
+  min-height: 540px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.videoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  min-height: 540px;
+}

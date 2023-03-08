@@ -1,0 +1,25 @@
+.mainMusic {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 12px;
+}
+.musicTitles {
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 18px;
+  margin-bottom: 6px;
+}
+.musicTitles_2 {
+  font-size: 14px;
+  font-style: italic;
+}
+.musicImg {
+  padding: 4px;
+  border-radius: 6px;
+  border: 1px solid rgb(218, 218, 218);
+  background-color: white;
+}
+.grey {
+  color: rgb(153, 153, 153);
+}

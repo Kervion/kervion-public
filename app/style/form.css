@@ -1,0 +1,42 @@
+.postform {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 10px 20px;
+}
+label {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 14px;
+  color: rgb(139, 139, 139);
+}
+input,
+textarea {
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid rgb(139, 139, 139);
+}
+textarea {
+  width: 300px;
+  min-width: 300px;
+  max-width: 450px;
+  min-height: 200px;
+}
+input[type="submit"] {
+  margin-top: 12px;
+  min-width: 100px;
+}
+input[type="submit"]:hover {
+  background-color: white;
+  cursor: pointer;
+}
+.info {
+  font-size: 24px;
+  padding: 18px;
+  border-radius: 6px;
+  background-color: white;
+  border: 1px solid rgb(139, 139, 139);
+}
+.alignRight {
+  text-align: right;
+}

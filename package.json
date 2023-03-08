@@ -1,0 +1,25 @@
+{
+  "name": "kervion",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/font": "^13.1.6",
+    "keen-slider": "^6.8.5",
+    "next": "13.1.6",
+    "nodemailer": "^6.9.1",
+    "p5": "^1.6.0",
+    "react": "18.2.0",
+    "react-confirm-alert": "^3.0.6",
+    "react-dom": "18.2.0",
+    "react-p5": "^1.3.33",
+    "react-p5-wrapper": "^4.1.0",
+    "react-youtube": "^10.1.0",
+    "yet-another-react-lightbox": "^2.4.3"
+  }
+}

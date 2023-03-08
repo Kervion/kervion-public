@@ -1,0 +1,58 @@
+.booksLines {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.mainMinds {
+  margin: 0px 60px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.mainBooks {
+  margin: 0px 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.book {
+  background-color: white;
+  display: inline-block;
+  margin: 12px;
+  border-radius: 6px;
+  border: 1px solid rgb(180, 180, 180);
+}
+.mind {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: inline-block;
+  margin: 12px;
+  border-radius: 6px;
+}
+.mind:hover {
+  outline: 3px solid black;
+}
+.bookTitle {
+  color: black;
+}
+.mindTitle {
+  color: white;
+  font-style: normal;
+  padding-top: 6px;
+}
+.book:hover,
+.book:hover h4 {
+  background-color: black;
+  color: white;
+}
+.bookItem h4 {
+  margin: 7px;
+}
+.imgCover {
+  padding: 3px;
+}
+.imgMind {
+  padding: 3px;
+}
+.bookDescr {
+  max-width: 240px;
+  padding: 0px 20px 12px 20px;
+}
