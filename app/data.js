@@ -35,7 +35,7 @@ const CARDS = [
 
   { link: "books", title: "Books", subtitle: "Księgarnia", icon: i_books, points: ["E-booki", "Wydawnictwo", "Książki"], photo: books },
   { link: "music", title: "Music", subtitle: "Composing", icon: i_music, points: ["Mixing", "Looperman", "Background music"], photo: music },
-  { link: "art/not", title: "Art", subtitle: "Painting", icon: i_art, points: ["Oil painting", "Mixed media", "Body painting"], photo: art },
+  { link: "art/muses/0", title: "Art", subtitle: "Painting", icon: i_art, points: ["Oil painting", "Mixed media", "Body painting"], photo: art },
   { link: "ai", title: "AI", subtitle: "Artificial Intelligence", icon: i_ai, points: ["AI in programming", "AI in visual arts", "AI in life"], photo: ai },
   { link: "archives", title: "Archives", subtitle: "River of Life", icon: i_archives, points: ["Art agency on Phuket", "Festinga", "Batmap"], photo: archives },
   { link: "author", title: "Author", subtitle: "About Q", icon: i_author, points: ["Tropical islands", "Career", "Contact"], photo: author },

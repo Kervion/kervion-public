@@ -7,6 +7,7 @@ import "/app/style/leftMenu.css";
 import "/app/style/music.css";
 import "/app/style/multimedia.css";
 import "/app/style/yarl.css";
+import "/app/style/slides.css";
 import Link from "next/link";
 import { Cormorant_Garamond, Roboto } from "@next/font/google";
 

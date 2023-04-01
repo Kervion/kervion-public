@@ -1,0 +1,49 @@
+.mainSlajdy {
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.withThumbs {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.thumbnails {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  justify-content: center;
+  width: fit-content;
+}
+.thumb {
+  margin: 0px 5px;
+  background-color: #eee;
+}
+.thumb:hover {
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+.pauseplay {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: #999;
+}
+.pauseplay:hover {
+  cursor: pointer;
+  color: #777;
+}
+
+.nextSlajd {
+  margin: 20px;
+  color: #ccc;
+}
+.nextSlajd:hover {
+  color: #aaa;
+}

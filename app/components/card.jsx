@@ -8,6 +8,7 @@ function Card({ card }) {
         <Image src={card.icon} className="icon" alt={card.link + " kervion portfolio icon"} width="60" />
         <h2>{card.title}</h2>
         <h5>{card.subtitle}</h5>
+
         <div className="imgWrapper">
           <Image src={card.photo} className="photo" alt={card.link + " kervion portfolio thumb"} />
         </div>

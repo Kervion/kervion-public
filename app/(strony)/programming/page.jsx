@@ -2,6 +2,48 @@ import Card from "/app/components/card";
 import { CARDS } from "/app/data.js";
 import Link from "next/link";
 
+const latest = [
+  {
+    link: "",
+    linkTitle: "",
+    description: "Kervion (you're here!) : Next 13, server side javascript ",
+    repo: "https://github.com/Kervion/kervion-public",
+  },
+  {
+    link: "https://showroom.kervion.com/mekong/",
+    linkTitle: "Mekong River",
+    description: " : React 18, responsive, multi language, AI ",
+    repo: "https://github.com/Kervion/mekong-public",
+  },
+  {
+    link: "https://showroom.kervion.com/guardian",
+    linkTitle: "Guardian Open API",
+    description: " : React 18, responsive, fully functional ",
+    repo: "https://github.com/Kervion/guardian-public",
+  },
+];
+
+const exercises = [
+  {
+    link: "https://showroom.kervion.com/runes/",
+    linkTitle: "The Runes",
+    description: " : React 18, midjourney ",
+    repo: "https://github.com/Kervion/runes-public",
+  },
+  {
+    link: "https://showroom.kervion.com/crudapi/",
+    linkTitle: "CRUD & Deezer",
+    description: " : React 18, tailwind, simple CRUD & API ",
+    repo: "https://github.com/Kervion/crudapi-public",
+  },
+  {
+    link: "https://temida-public.vercel.app/",
+    linkTitle: "Tree ordering",
+    description: " : Next 13, tailwind, js exercise ",
+    repo: "https://github.com/Kervion/temida-public",
+  },
+];
+
 function Programming() {
   const currentCard = CARDS.find((obj) => obj.link === "programming");
 
@@ -14,40 +56,36 @@ function Programming() {
         <section>
           <h4>Latest projects from 2023</h4>
           <ol>
-            <li>
-              <a href="https://showroom.kervion.com/mekong/" target="_blank">
-                Mekong River
-              </a>{" "}
-              : React 18, responsive, multi language, AI,{" "}
-              <a href="https://github.com/Kervion/mekong-public" target="_blank">
-                github repo
-              </a>
-            </li>
-            <li>
-              <a href=" https://showroom.kervion.com/guardian" target="_blank">
-                Guardian Open API
-              </a>{" "}
-              : React 18, responsive, fully functional,{" "}
-              <a href="https://github.com/Kervion/guardian-public" target="_blank">
-                github repo
-              </a>
-            </li>
-            <li>
-              <a href="https://showroom.kervion.com/runes/" target="_blank">
-                The Runes
-              </a>{" "}
-              : React 18, midjourney,{" "}
-              <a href="https://github.com/Kervion/runes-public" target="_blank">
-                github repo
-              </a>
-            </li>
-
-            <li>
-              Kervion (you're here!) : Next 13, server side javascript{" "}
-              <a href=" https://github.com/Kervion/kervion-public.git" target="_blank">
-                github repo
-              </a>
-            </li>
+            {latest.map((item, index) => (
+              <li key={index}>
+                {item.link !== "" && (
+                  <a href={item.link} target="_blank">
+                    {item.linkTitle}
+                  </a>
+                )}
+                {item.description}
+                <a href={item.repo} target="_blank">
+                  github repo
+                </a>
+              </li>
+            ))}
+          </ol>
+          <br />
+          <span style={{ paddingLeft: "20px" }}>Side projects :</span>
+          <ol>
+            {exercises.map((item, index) => (
+              <li key={index}>
+                {item.link !== "" && (
+                  <a href={item.link} target="_blank">
+                    {item.linkTitle}
+                  </a>
+                )}
+                {item.description}
+                <a href={item.repo} target="_blank">
+                  github repo
+                </a>
+              </li>
+            ))}
           </ol>
         </section>
 
@@ -124,8 +162,15 @@ function Programming() {
             </li>
 
             <li>
-              <Link href="multimedia/motion/script-1">p5 Sketches</Link> (java, p5.js)
+              <a href="http://kervion.com/sketches/index.php" target="_blank">
+                p5 Sketches
+              </a>{" "}
+              (java, p5.js)
             </li>
+
+            {/* <li>
+              <Link href="multimedia/motion/script-1">p5 Sketches</Link> (java, p5.js)
+            </li> */}
             <li>
               <a href="http://abm.kervion.com/" target="_blank">
                 Booking

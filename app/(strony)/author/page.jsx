@@ -49,7 +49,7 @@ function Author() {
           <h6>Furthermore...</h6>
           <p>
             ...among others, I watched the world from perspective of a fish farm manager in Thailand, a stockbroker in Warsaw, a carer for the elderly in England, a laborer in
-            France, England, Ireland, Scotland, The Netherlands and Spain, a French teacher in Taiwan, an Adobe lecturer, a SEO specialist, a reporter in Barcelona, a waiter on a
+            France, England, Ireland, Scotland, The Netherlands and Spain, a French teacher in Taiwan, an Adobe lecturer, a SEO specialist, a reporter in Barcelona, a sailor on a
             cruise ship in the Caribbean, an interpreter of French, English and Spanish, a Buddhist monk and several others, whose memory makes me feel tense.
           </p>
         </section>

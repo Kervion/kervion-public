@@ -110,9 +110,15 @@ const movies = [
     linkTitle: "Loy Krathong",
     description: "",
   },
+  // {
+  //   type: "internal",
+  //   link: "multimedia/motion/script-1",
+  //   linkTitle: "p5 Sketches",
+  //   description: "",
+  // },
   {
-    type: "internal",
-    link: "multimedia/motion/script-1",
+    type: "external",
+    link: "http://kervion.com/sketches/index.php",
     linkTitle: "p5 Sketches",
     description: "",
   },

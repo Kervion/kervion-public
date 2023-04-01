@@ -52,7 +52,6 @@ export default function Mailer() {
           <label>Email*</label>
           <input onChange={changeEmail} type="email" required="required" size="30" maxLength="30" value={email} />
         </div>
-
         <div className="alignRight">
           <label>Message*</label>
           <textarea onChange={changeMssg} required="required" value={message} />

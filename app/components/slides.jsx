@@ -38,7 +38,7 @@ function Slides({ tablica }) {
       slides={tablica}
       carousel={{ preload: 6 }}
       render={{ slide: NextJsImage }}
-      slideshow={{ autoplay: true, delay: 3000 }}
+      slideshow={{ autoplay: false, delay: 5000 }}
       thumbnails={{
         position: "bottom",
         width: 50,
@@ -53,4 +53,5 @@ function Slides({ tablica }) {
     />
   );
 }
+
 export default Slides;
