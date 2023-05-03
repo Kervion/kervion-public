@@ -1,6 +1,6 @@
-import Card from "/app/components/card";
-import { CARDS } from "/app/data.js";
-import Link from "next/link";
+import Card from "/app/components/card"
+import { CARDS } from "/app/data.js"
+import Link from "next/link"
 
 const latest = [
   {
@@ -21,9 +21,21 @@ const latest = [
     description: " : React 18, responsive, fully functional ",
     repo: "https://github.com/Kervion/guardian-public",
   },
-];
+]
 
 const exercises = [
+  {
+    link: "https://splendid-sunburst-92ef2b.netlify.app/",
+    linkTitle: "Animal's Houses",
+    description: " : Vue, Nuxt, Leonardo ",
+    repo: "",
+  },
+  {
+    link: "http://showroom.kervion.com/nask/",
+    linkTitle: "NASK",
+    description: " : React 18, create-react-app ",
+    repo: "https://github.com/Kervion/nask-public.git",
+  },
   {
     link: "https://showroom.kervion.com/runes/",
     linkTitle: "The Runes",
@@ -42,10 +54,23 @@ const exercises = [
     description: " : Next 13, tailwind, js exercise ",
     repo: "https://github.com/Kervion/temida-public",
   },
-];
+]
+
+const typescripts = [
+  {
+    linkTitle: "The Runes",
+    description: " : Typescript version ",
+    repo: "https://github.com/Kervion/runes-type.git",
+  },
+  {
+    linkTitle: "Temida tree order",
+    description: " : Typescript version ",
+    repo: "https://github.com/Kervion/temida-type.git",
+  },
+]
 
 function Programming() {
-  const currentCard = CARDS.find((obj) => obj.link === "programming");
+  const currentCard = CARDS.find((obj) => obj.link === "programming")
 
   return (
     <div className="mainLinks">
@@ -71,7 +96,7 @@ function Programming() {
             ))}
           </ol>
           <br />
-          <span style={{ paddingLeft: "20px" }}>Side projects :</span>
+          <span style={{ paddingLeft: "20px" }}>Side projects 2023 :</span>
           <ol>
             {exercises.map((item, index) => (
               <li key={index}>
@@ -80,6 +105,22 @@ function Programming() {
                     {item.linkTitle}
                   </a>
                 )}
+                {item.description}
+                {item.repo !== "" && (
+                  <a href={item.repo} target="_blank">
+                    github repo
+                  </a>
+                )}
+              </li>
+            ))}
+          </ol>
+
+          <br />
+          <span style={{ paddingLeft: "20px" }}>Typescript versions :</span>
+          <ol>
+            {typescripts.map((item, index) => (
+              <li key={index}>
+                {item.linkTitle}
                 {item.description}
                 <a href={item.repo} target="_blank">
                   github repo
@@ -203,7 +244,7 @@ function Programming() {
         <section>
           <h4>Current preferred stack</h4>
           <ul>
-            <li>front : Next, functional React or other js framework</li>
+            <li>front : Next, functional React or other js frameworks (Vue, Nuxt...)</li>
             <li>backend : Next, Node, Express</li>
             <li>databse : MySQL or serverless for simple apps</li>
             <li>mobile : React Native, Expo</li>
@@ -236,11 +277,11 @@ function Programming() {
             <li>Google : SEO, SEM, Places, Maps, Android, AdSense, AdWords, Keyword Planner, Analytics</li>
             <li>courses : Angular, typescript, python, JAVA, C++</li>
             <li>other : Sass, XAMPP, Laravel, MVC, Smarty, AJAX, SVG, htaccess</li>
-            <li>Atlassian: JIRA, Confluence, Bitbucket</li>
+            <li>Atlassian: JIRA, Confluence, Bitbucket, SourceTree</li>
           </ul>
         </section>
       </div>
     </div>
-  );
+  )
 }
-export default Programming;
+export default Programming

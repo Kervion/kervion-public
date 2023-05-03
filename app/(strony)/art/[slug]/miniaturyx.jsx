@@ -1,16 +1,16 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "next/image"
+// import Link from "next/link";
 
-function Miniatury({ arrThumbs, catg }) {
+function Miniatury({ arrThumbs, catg, setActiveIndex }) {
   return (
     <div className="thumbnails">
       {arrThumbs.map((thumb, index) => (
-        <Link key={index} href={"art/" + catg + "/" + index}>
+        <div key={index} onClick={() => setActiveIndex(index)}>
           <Image className="thumb" quality="60" alt="thumb art kervion" src={thumb.src} width={80} height={60} blurDataURL={thumb.blurDataURL} placeholder="blur" loading="lazy" />
-        </Link>
+        </div>
       ))}
     </div>
-  );
+  )
 }
 
-export default Miniatury;
+export default Miniatury

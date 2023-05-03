@@ -1,5 +1,5 @@
-import Card from "./components/card";
-import { CARDS } from "./data.js";
+import Card from "./components/card"
+import { CARDS } from "./data.js"
 
 export default function Home() {
   return (
@@ -8,5 +8,5 @@ export default function Home() {
         <Card card={card} key={card} />
       ))}
     </div>
-  );
+  )
 }

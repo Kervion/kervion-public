@@ -1,9 +1,9 @@
-import Mailer from "app/components/mailer";
-import Card from "/app/components/card";
-import { CARDS } from "/app/data.js";
+import Mailer from "app/components/mailer"
+import Card from "/app/components/card"
+import { CARDS } from "/app/data.js"
 
 function Author() {
-  const currentCard = CARDS.find((obj) => obj.link === "author");
+  const currentCard = CARDS.find((obj) => obj.link === "author")
   return (
     <div className="mainLinks">
       <Card card={currentCard} />
@@ -50,11 +50,11 @@ function Author() {
           <p>
             ...among others, I watched the world from perspective of a fish farm manager in Thailand, a stockbroker in Warsaw, a carer for the elderly in England, a laborer in
             France, England, Ireland, Scotland, The Netherlands and Spain, a French teacher in Taiwan, an Adobe lecturer, a SEO specialist, a reporter in Barcelona, a sailor on a
-            cruise ship in the Caribbean, an interpreter of French, English and Spanish, a Buddhist monk and several others, whose memory makes me feel tense.
+            cruise ship in the Caribbean, a bartender on Hvar, an interpreter of French, English and Spanish, a Buddhist monk, and several others, whose memory makes me feel tense.
           </p>
         </section>
       </div>
     </div>
-  );
+  )
 }
-export default Author;
+export default Author

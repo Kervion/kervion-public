@@ -4,6 +4,7 @@ const nextConfig = {
   },
 
   reactStrictMode: false,
-};
+  optimizeFonts: false,
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig

@@ -1,16 +1,16 @@
-"use client";
-import * as React from "react";
-import Image from "next/image";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
-import Inline from "yet-another-react-lightbox/plugins/inline";
-import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
-import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
-import "yet-another-react-lightbox/plugins/thumbnails.css";
+"use client"
+import * as React from "react"
+import Image from "next/image"
+import Lightbox from "yet-another-react-lightbox"
+import "yet-another-react-lightbox/styles.css"
+import Inline from "yet-another-react-lightbox/plugins/inline"
+import Slideshow from "yet-another-react-lightbox/plugins/slideshow"
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails"
+import "yet-another-react-lightbox/plugins/thumbnails.css"
 
 const NextJsImage = (image, offset, rect) => {
-  const width = Math.round(Math.min(rect.width, (rect.height / image.height) * image.width));
-  const height = Math.round(Math.min(rect.height, (rect.width / image.width) * image.height));
+  const width = Math.round(Math.min(rect.width, (rect.height / image.height) * image.width))
+  const height = Math.round(Math.min(rect.height, (rect.width / image.width) * image.height))
   return (
     <div style={{ position: "relative", width, height }}>
       <Image
@@ -18,15 +18,13 @@ const NextJsImage = (image, offset, rect) => {
         quality="100"
         alt="kervion portfolio"
         src={image}
-        loading="lazy"
-        placeholder="blur"
         sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               33vw"
       />
     </div>
-  );
-};
+  )
+}
 
 function Slides({ tablica }) {
   return (
@@ -51,7 +49,7 @@ function Slides({ tablica }) {
         vignette: false,
       }}
     />
-  );
+  )
 }
 
-export default Slides;
+export default Slides

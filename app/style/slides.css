@@ -45,5 +45,6 @@
   color: #ccc;
 }
 .nextSlajd:hover {
+  cursor: pointer;
   color: #aaa;
 }
